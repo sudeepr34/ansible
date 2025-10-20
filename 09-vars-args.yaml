@@ -1,0 +1,7 @@
+- name: Sudeep is reading
+  hosts: local
+  connection: local
+  tasks:
+  - name: printing the course details.
+    ansible.builtin.debug:
+    msg: "Course Name is: {{ COURSE }}, Duration: {{ DURATION }}, Trainer: {{ TRAINER }}"

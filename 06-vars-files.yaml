@@ -1,5 +1,5 @@
 - name: Sudeep is a legend
-  hosts: localhost
+  hosts: local
   connection: local
   vars_files:
   - course.yaml
