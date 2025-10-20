@@ -1,0 +1,9 @@
+- name: Sudeep is a legend
+  host: localhost
+  connection: local
+  vars_file:
+  - course.yaml
+  tasks:
+  - name: print the course info
+    ansible.builtin.debug:
+      msg: "Course Name is: {{ COURSE }}, Duration: {{ DURATION }}, Trainer: {{ TRAINER }}"
