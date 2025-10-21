@@ -27,11 +27,11 @@
   
   - name: convert map to list
     ansible.builtin.debug:
-    msg: "Tags are: {{ tags | dict2items }} "
+      msg: "Tags are: {{ tags | dict2items }} "
 
   - name: convert list to map
     ansible.builtin.debug:
-    msg: "Tags map: {{ listTags | items2dict }} "
+      msg: "Tags map: {{ listTags | items2dict }} "
 
   - name: read yaml and take it to variable
     ansible.builtin.set_fact:
@@ -69,6 +69,6 @@
 
   - name: print the command command_output
     ansible.builtin.debug:
-     msg: "{{ redirect_output }}"
+      msg: "{{ redirect_output }}"
 
   
