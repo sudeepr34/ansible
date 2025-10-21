@@ -1,0 +1,8 @@
+- name: gather facs
+  hosts: local
+  connection: local
+  # ansible collects the info of target server, before it executes
+  tasks:
+  - name: facts
+    ansible.builtin.debug:
+      msg: "{{ ansible_facts }}"
